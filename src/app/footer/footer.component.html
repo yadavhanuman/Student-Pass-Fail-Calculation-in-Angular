@@ -1,0 +1,27 @@
+
+ <div style="font-size: 20px; font-weight: bold;">Your Marks is:&nbsp;{{name}}</div> 
+
+@if (name >75 && name <=100) {
+    <h2>Result:&nbsp;Distinction</h2>
+}
+
+@else if (name > 60 && name <=75) {
+    <h2>Result:&nbsp;First Class</h2>
+}
+
+@else if (name > 50 && name <=59) {
+    <h2>Result:&nbsp;Second Class</h2>
+}
+
+@else if (name > 33 && name <=49) {
+    <h2>Result:&nbsp;Third Class</h2>
+}
+
+@else if (name >= 0 && name <= 33) {
+    <h2>Result:&nbsp;Fail</h2>
+    
+}
+
+@else{
+<h1>Enter Correct Marks</h1>
+}
